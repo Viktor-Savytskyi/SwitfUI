@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		324B75B32BB0BCD600B41FFE /* SingleOTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B75B22BB0BCD600B41FFE /* SingleOTPTextField.swift */; };
+		324B75B32BB0BCD600B41FFE /* SingleOTPTextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B75B22BB0BCD600B41FFE /* SingleOTPTextBox.swift */; };
 		325336922B38C0690067907E /* FieldWithTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325336912B38C0690067907E /* FieldWithTitleView.swift */; };
 		325336942B38CD330067907E /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325336932B38CD330067907E /* UserData.swift */; };
 		325989212BB2064B005F7096 /* PinTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325989202BB2064B005F7096 /* PinTextFieldModifier.swift */; };
@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		324B75B22BB0BCD600B41FFE /* SingleOTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleOTPTextField.swift; sourceTree = "<group>"; };
+		324B75B22BB0BCD600B41FFE /* SingleOTPTextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleOTPTextBox.swift; sourceTree = "<group>"; };
 		325336912B38C0690067907E /* FieldWithTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldWithTitleView.swift; sourceTree = "<group>"; };
 		325336932B38CD330067907E /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		325989202BB2064B005F7096 /* PinTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinTextFieldModifier.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				326CE35A2B91016000012A31 /* OTPTextField.swift */,
-				324B75B22BB0BCD600B41FFE /* SingleOTPTextField.swift */,
+				324B75B22BB0BCD600B41FFE /* SingleOTPTextBox.swift */,
 				325989242BB20AD4005F7096 /* PinViewValidator.swift */,
 			);
 			path = OTPTextView;
@@ -212,7 +212,7 @@
 				325989232BB2069D005F7096 /* UIView+Extension.swift in Sources */,
 				325989252BB20AD4005F7096 /* PinViewValidator.swift in Sources */,
 				326CE3662B910E5000012A31 /* BrendView.swift in Sources */,
-				324B75B32BB0BCD600B41FFE /* SingleOTPTextField.swift in Sources */,
+				324B75B32BB0BCD600B41FFE /* SingleOTPTextBox.swift in Sources */,
 				32FF2EDD2B3363D4006E9CE0 /* LoginView.swift in Sources */,
 				326CE3612B91088F00012A31 /* String+Extension.swift in Sources */,
 				3268A7172B3CB533009F1766 /* ValidationView.swift in Sources */,

@@ -45,10 +45,10 @@ struct LoginView: View {
                         ValidationView()
                     } label: {
                         Text("Login Button")
-                            .frame(width: 200)
+                            .frame(maxWidth: .infinity)
                             .padding()
                             .background(Color.orange)
-                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                            .clipShape(RoundedRectangle(cornerRadius: 6))
                     }
                 }
                 .padding(20)

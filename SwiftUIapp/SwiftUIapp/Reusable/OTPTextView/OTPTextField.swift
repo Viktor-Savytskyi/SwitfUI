@@ -10,23 +10,59 @@ import SwiftUI
 struct OTPTextField: View {
     
     @ObservedObject var pinViewValidator = PinViewValidator()
-    @State var enteredValue: [String] = []
-    @FocusState var fieldFocus: Int?
+    @FocusState var isKeyboardShowing: Bool
+    
     var completion: (() -> ())?
+    var arrayTextFields: [SingleOTPTextBox] = []
      
     var body: some View {
-        HStack(spacing: 15) {
-            SingleOTPTextField(otpValue: pinViewValidator.firstField) { value in
-                enteredValue.append(value)
+        VStack {
+            HStack(spacing: 0) {
+                ForEach(0..<pinViewValidator.pinCount, id: \.self) { index in
+                    SingleOTPTextBox(index: index,
+                                     otpString: pinViewValidator.enteredPin,
+                                     isKeyboardShowing: isKeyboardShowing)
+                }
             }
-            SingleOTPTextField(otpValue: pinViewValidator.secondField)  { value in
-                enteredValue.append(value)
+            .padding(.top, 10)
+            .padding(.bottom, 20)
+            .background {
+                TextField("Enter your name", text: $pinViewValidator.enteredPin.limit(pinViewValidator.pinCount))
+                    .frame(width: 1, height: 1)
+                    .opacity(0.001)
+                    .blendMode(.screen)
+                    .focused($isKeyboardShowing)
+                    .keyboardType(.numberPad)
+                    .textContentType(.oneTimeCode)
             }
-            SingleOTPTextField(otpValue: pinViewValidator.thirdField) { value in
-                enteredValue.append(value)
+            .contentShape(Rectangle())
+            .onTapGesture {
+                isKeyboardShowing.toggle()
             }
-            SingleOTPTextField(otpValue: pinViewValidator.fourthField) { value in
-                enteredValue.append(value)
+            Button {
+                print("button action ")
+            } label: {
+                Text("Verify")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.white)
+                    .padding(.vertical, 12)
+                    .frame(maxWidth: .infinity)
+                    .background {
+                        RoundedRectangle(cornerRadius: 6, style: .continuous)
+                            .fill(.blue)
+
+                    }
+            }
+            .disableWithPpacity(condition: pinViewValidator.enteredPin.count < pinViewValidator.pinCount)
+        }
+        .padding(.all)
+        .toolbar{
+            ToolbarItem(placement: .keyboard) {
+                Button("Done") {
+                    isKeyboardShowing.toggle()
+                }
+                .frame(maxWidth: .infinity, alignment: .trailing)
             }
         }
     }
@@ -34,4 +70,23 @@ struct OTPTextField: View {
 
 #Preview {
     OTPTextField()
+}
+
+extension View {
+    func disableWithPpacity(condition: Bool) -> some View {
+        self
+            .disabled(condition)
+            .opacity(condition ? 0.6 : 1)
+    }
+}
+
+extension Binding where Value == String {
+    func limit(_ length: Int) -> Self {
+        if self.wrappedValue.count > length {
+            DispatchQueue.main.async {
+                self.wrappedValue = String(self.wrappedValue.prefix(length))
+            }
+        }
+        return self
+    }
 }

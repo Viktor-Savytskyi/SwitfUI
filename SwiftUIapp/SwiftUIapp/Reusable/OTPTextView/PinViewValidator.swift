@@ -5,11 +5,9 @@
 //  Created by Віктор Савицький on 25.03.2024.
 //
 
-import Foundation
+import SwiftUI
 
 class PinViewValidator: ObservableObject {
-    @Published var firstField: String = ""
-    @Published var secondField: String = ""
-    @Published var thirdField: String = ""
-    @Published var fourthField: String = ""
+    let pinCount = 4
+   @Published var enteredPin: String = ""
 }

@@ -9,13 +9,11 @@ import SwiftUI
 
 struct PinTextFieldModifier: ViewModifier {
     
-    let viewHeight: CGFloat = 50
     func body(content: Content) -> some View {
         content
-            .keyboardType(.numberPad)
-            .background(Color.red.opacity(0.1))
-            .frame(width: 50, height: viewHeight)
-            .clipShape(RoundedRectangle(cornerRadius: viewHeight / 2 ))
-            .multilineTextAlignment(.center)
+            .background {
+                RoundedRectangle(cornerRadius: 6, style: .continuous).stroke()
+            }   
+            .padding()
     }
 }
