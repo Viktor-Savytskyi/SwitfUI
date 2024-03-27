@@ -7,20 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324B75B32BB0BCD600B41FFE /* SingleOTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324B75B22BB0BCD600B41FFE /* SingleOTPTextField.swift */; };
 		325336922B38C0690067907E /* FieldWithTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325336912B38C0690067907E /* FieldWithTitleView.swift */; };
 		325336942B38CD330067907E /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325336932B38CD330067907E /* UserData.swift */; };
+		325989212BB2064B005F7096 /* PinTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325989202BB2064B005F7096 /* PinTextFieldModifier.swift */; };
+		325989232BB2069D005F7096 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325989222BB2069D005F7096 /* UIView+Extension.swift */; };
+		325989252BB20AD4005F7096 /* PinViewValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325989242BB20AD4005F7096 /* PinViewValidator.swift */; };
+		3268A7172B3CB533009F1766 /* ValidationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268A7162B3CB533009F1766 /* ValidationView.swift */; };
+		326CE35B2B91016000012A31 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CE35A2B91016000012A31 /* OTPTextField.swift */; };
+		326CE3612B91088F00012A31 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CE3602B91088F00012A31 /* String+Extension.swift */; };
+		326CE3662B910E5000012A31 /* BrendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CE3652B910E5000012A31 /* BrendView.swift */; };
 		32FF2EDB2B3363D4006E9CE0 /* SwiftUIappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FF2EDA2B3363D4006E9CE0 /* SwiftUIappApp.swift */; };
-		32FF2EDD2B3363D4006E9CE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FF2EDC2B3363D4006E9CE0 /* ContentView.swift */; };
+		32FF2EDD2B3363D4006E9CE0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FF2EDC2B3363D4006E9CE0 /* LoginView.swift */; };
 		32FF2EDF2B3363D5006E9CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32FF2EDE2B3363D5006E9CE0 /* Assets.xcassets */; };
 		32FF2EE32B3363D5006E9CE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32FF2EE22B3363D5006E9CE0 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		324B75B22BB0BCD600B41FFE /* SingleOTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleOTPTextField.swift; sourceTree = "<group>"; };
 		325336912B38C0690067907E /* FieldWithTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldWithTitleView.swift; sourceTree = "<group>"; };
 		325336932B38CD330067907E /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		325989202BB2064B005F7096 /* PinTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinTextFieldModifier.swift; sourceTree = "<group>"; };
+		325989222BB2069D005F7096 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		325989242BB20AD4005F7096 /* PinViewValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewValidator.swift; sourceTree = "<group>"; };
+		3268A7162B3CB533009F1766 /* ValidationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationView.swift; sourceTree = "<group>"; };
+		326CE35A2B91016000012A31 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		326CE3602B91088F00012A31 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		326CE3652B910E5000012A31 /* BrendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrendView.swift; sourceTree = "<group>"; };
 		32FF2ED72B3363D4006E9CE0 /* SwiftUIapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32FF2EDA2B3363D4006E9CE0 /* SwiftUIappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIappApp.swift; sourceTree = "<group>"; };
-		32FF2EDC2B3363D4006E9CE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		32FF2EDC2B3363D4006E9CE0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		32FF2EDE2B3363D5006E9CE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32FF2EE02B3363D5006E9CE0 /* SwiftUIapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIapp.entitlements; sourceTree = "<group>"; };
 		32FF2EE22B3363D5006E9CE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -41,9 +57,47 @@
 			isa = PBXGroup;
 			children = (
 				325336912B38C0690067907E /* FieldWithTitleView.swift */,
+				326CE3652B910E5000012A31 /* BrendView.swift */,
 				325336932B38CD330067907E /* UserData.swift */,
+				326CE3632B910CBF00012A31 /* OTPTextView */,
 			);
 			path = Reusable;
+			sourceTree = "<group>";
+		};
+		3259891F2BB20618005F7096 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				325989202BB2064B005F7096 /* PinTextFieldModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		3268A7152B3CB508009F1766 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				32FF2EDC2B3363D4006E9CE0 /* LoginView.swift */,
+				3268A7162B3CB533009F1766 /* ValidationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		326CE3622B910C8200012A31 /* Extensions  */ = {
+			isa = PBXGroup;
+			children = (
+				326CE3602B91088F00012A31 /* String+Extension.swift */,
+				325989222BB2069D005F7096 /* UIView+Extension.swift */,
+			);
+			path = "Extensions ";
+			sourceTree = "<group>";
+		};
+		326CE3632B910CBF00012A31 /* OTPTextView */ = {
+			isa = PBXGroup;
+			children = (
+				326CE35A2B91016000012A31 /* OTPTextField.swift */,
+				324B75B22BB0BCD600B41FFE /* SingleOTPTextField.swift */,
+				325989242BB20AD4005F7096 /* PinViewValidator.swift */,
+			);
+			path = OTPTextView;
 			sourceTree = "<group>";
 		};
 		32FF2ECE2B3363D4006E9CE0 = {
@@ -66,7 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				32FF2EDA2B3363D4006E9CE0 /* SwiftUIappApp.swift */,
-				32FF2EDC2B3363D4006E9CE0 /* ContentView.swift */,
+				3268A7152B3CB508009F1766 /* Views */,
+				3259891F2BB20618005F7096 /* ViewModifiers */,
+				326CE3622B910C8200012A31 /* Extensions  */,
 				325336902B38C0440067907E /* Reusable */,
 				32FF2EDE2B3363D5006E9CE0 /* Assets.xcassets */,
 				32FF2EE02B3363D5006E9CE0 /* SwiftUIapp.entitlements */,
@@ -153,10 +209,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32FF2EDD2B3363D4006E9CE0 /* ContentView.swift in Sources */,
+				325989232BB2069D005F7096 /* UIView+Extension.swift in Sources */,
+				325989252BB20AD4005F7096 /* PinViewValidator.swift in Sources */,
+				326CE3662B910E5000012A31 /* BrendView.swift in Sources */,
+				324B75B32BB0BCD600B41FFE /* SingleOTPTextField.swift in Sources */,
+				32FF2EDD2B3363D4006E9CE0 /* LoginView.swift in Sources */,
+				326CE3612B91088F00012A31 /* String+Extension.swift in Sources */,
+				3268A7172B3CB533009F1766 /* ValidationView.swift in Sources */,
 				32FF2EDB2B3363D4006E9CE0 /* SwiftUIappApp.swift in Sources */,
+				325989212BB2064B005F7096 /* PinTextFieldModifier.swift in Sources */,
 				325336942B38CD330067907E /* UserData.swift in Sources */,
 				325336922B38C0690067907E /* FieldWithTitleView.swift in Sources */,
+				326CE35B2B91016000012A31 /* OTPTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +359,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -333,7 +397,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;

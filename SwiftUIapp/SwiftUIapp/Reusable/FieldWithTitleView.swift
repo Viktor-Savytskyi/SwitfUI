@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct FieldWithTitleView: View {
+    
     @Binding var enteredText: String
+    
     var placeHolder = ""
     var topText = ""
     

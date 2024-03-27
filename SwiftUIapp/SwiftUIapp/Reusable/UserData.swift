@@ -13,8 +13,8 @@ class UserData: ObservableObject {
     @Published var selectedRole = 0
 }
 
-struct UserData_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct UserData_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LoginView()
+//    }
+//}
