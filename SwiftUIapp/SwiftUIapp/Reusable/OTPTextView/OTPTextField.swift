@@ -11,9 +11,7 @@ struct OTPTextField: View {
     
     @ObservedObject var pinViewValidator = PinViewValidator()
     @FocusState var isKeyboardShowing: Bool
-    
-    var completion: (() -> ())?
-    var arrayTextFields: [SingleOTPTextBox] = []
+    @Binding var needToMove: Bool
      
     var body: some View {
         VStack {
@@ -40,7 +38,7 @@ struct OTPTextField: View {
                 isKeyboardShowing.toggle()
             }
             Button {
-                print("button action ")
+                needToMove = true
             } label: {
                 Text("Verify")
                     .font(.title)
@@ -68,9 +66,9 @@ struct OTPTextField: View {
     }
 }
 
-#Preview {
-    OTPTextField()
-}
+//#Preview {
+//    OTPTextField()
+//}
 
 extension View {
     func disableWithPpacity(condition: Bool) -> some View {
