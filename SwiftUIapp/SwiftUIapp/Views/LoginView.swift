@@ -23,28 +23,14 @@ struct LoginView: View {
             NavigationView {
                 VStack(spacing: 50) {
                     VStack(spacing: 20) {
-                        Image(systemName: "person.circle.fill")
-                            .imageScale(.large)
-                            .foregroundColor(.accentColor)
-                        FieldWithTitleView(enteredText: $userCreds.login, placeHolder: "Enter your Login", topText: "Custom Login")
-                        FieldWithTitleView(enteredText: $userCreds.password, placeHolder: "Enter your Password", topText: "Custom Password")
-                        
-                        VStack(spacing: 20) {
-                            Picker(selection: $userCreds.selectedRole) {
-                                ForEach(0 ..< roles.count) {
-                                    Text(roles[$0])
-                                }
-                            } label: {
-                                
-                            }
-                            .pickerStyle(SegmentedPickerStyle())
-                            
-                        }
+                        BrendView()
+                        FieldWithTitleView(enteredText: $userCreds.login, placeHolder: "Enter your Login", topText: "Login")
+                        FieldWithTitleView(enteredText: $userCreds.password, placeHolder: "Enter your Password", topText: "Password")
                     }
                     NavigationLink {
-                        ValidationView()
+                        ValidationView(phoneNumber: userCreds.login)
                     } label: {
-                        Text("Login Button")
+                        Text("Login")
                             .frame(maxWidth: .infinity)
                             .padding()
                             .background(Color.orange)
@@ -52,6 +38,7 @@ struct LoginView: View {
                     }
                 }
                 .padding(20)
+                .ignoresSafeArea(.keyboard)
             }
         }
     }
