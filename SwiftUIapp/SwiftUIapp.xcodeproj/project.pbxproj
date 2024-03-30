@@ -13,6 +13,10 @@
 		325989212BB2064B005F7096 /* PinTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325989202BB2064B005F7096 /* PinTextFieldModifier.swift */; };
 		325989232BB2069D005F7096 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325989222BB2069D005F7096 /* UIView+Extension.swift */; };
 		325989252BB20AD4005F7096 /* PinViewValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325989242BB20AD4005F7096 /* PinViewValidator.swift */; };
+		325F8A2C2BB8796F00497C36 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F8A2B2BB8796F00497C36 /* OnboardingViewModel.swift */; };
+		325F8A2F2BB879A200497C36 /* OnboardingPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F8A2E2BB879A200497C36 /* OnboardingPageModel.swift */; };
+		325F8A322BB87C7100497C36 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F8A312BB87C7100497C36 /* OnboardingPageView.swift */; };
+		325F8A342BB8849500497C36 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F8A332BB8849500497C36 /* PageControl.swift */; };
 		326298D22BB60D80005C4CB5 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326298D12BB60D80005C4CB5 /* OnboardingView.swift */; };
 		3268A7172B3CB533009F1766 /* ValidationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3268A7162B3CB533009F1766 /* ValidationView.swift */; };
 		326CE35B2B91016000012A31 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CE35A2B91016000012A31 /* OTPTextField.swift */; };
@@ -31,6 +35,10 @@
 		325989202BB2064B005F7096 /* PinTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinTextFieldModifier.swift; sourceTree = "<group>"; };
 		325989222BB2069D005F7096 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		325989242BB20AD4005F7096 /* PinViewValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewValidator.swift; sourceTree = "<group>"; };
+		325F8A2B2BB8796F00497C36 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		325F8A2E2BB879A200497C36 /* OnboardingPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageModel.swift; sourceTree = "<group>"; };
+		325F8A312BB87C7100497C36 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		325F8A332BB8849500497C36 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		326298D12BB60D80005C4CB5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		3268A7162B3CB533009F1766 /* ValidationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationView.swift; sourceTree = "<group>"; };
 		326CE35A2B91016000012A31 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
@@ -74,12 +82,48 @@
 			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
+		325F8A292BB8791100497C36 /* OnboardingView */ = {
+			isa = PBXGroup;
+			children = (
+				325F8A2D2BB8799100497C36 /* Model */,
+				325F8A2A2BB8792200497C36 /* ViewModel */,
+				325F8A302BB87C4200497C36 /* Views */,
+				326298D12BB60D80005C4CB5 /* OnboardingView.swift */,
+			);
+			path = OnboardingView;
+			sourceTree = "<group>";
+		};
+		325F8A2A2BB8792200497C36 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				325F8A2B2BB8796F00497C36 /* OnboardingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		325F8A2D2BB8799100497C36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				325F8A2E2BB879A200497C36 /* OnboardingPageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		325F8A302BB87C4200497C36 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				325F8A312BB87C7100497C36 /* OnboardingPageView.swift */,
+				325F8A332BB8849500497C36 /* PageControl.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3268A7152B3CB508009F1766 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				32FF2EDC2B3363D4006E9CE0 /* LoginView.swift */,
 				3268A7162B3CB533009F1766 /* ValidationView.swift */,
-				326298D12BB60D80005C4CB5 /* OnboardingView.swift */,
+				325F8A292BB8791100497C36 /* OnboardingView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,13 +261,17 @@
 				326CE3662B910E5000012A31 /* BrendView.swift in Sources */,
 				324B75B32BB0BCD600B41FFE /* SingleOTPTextBox.swift in Sources */,
 				32FF2EDD2B3363D4006E9CE0 /* LoginView.swift in Sources */,
+				325F8A2C2BB8796F00497C36 /* OnboardingViewModel.swift in Sources */,
 				326CE3612B91088F00012A31 /* String+Extension.swift in Sources */,
 				3268A7172B3CB533009F1766 /* ValidationView.swift in Sources */,
+				325F8A2F2BB879A200497C36 /* OnboardingPageModel.swift in Sources */,
 				32FF2EDB2B3363D4006E9CE0 /* SwiftUIappApp.swift in Sources */,
 				325989212BB2064B005F7096 /* PinTextFieldModifier.swift in Sources */,
 				325336942B38CD330067907E /* UserData.swift in Sources */,
 				325336922B38C0690067907E /* FieldWithTitleView.swift in Sources */,
 				326298D22BB60D80005C4CB5 /* OnboardingView.swift in Sources */,
+				325F8A322BB87C7100497C36 /* OnboardingPageView.swift in Sources */,
+				325F8A342BB8849500497C36 /* PageControl.swift in Sources */,
 				326CE35B2B91016000012A31 /* OTPTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
